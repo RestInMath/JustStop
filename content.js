@@ -52,6 +52,11 @@ function check_visible_tab(){
 					var regexp = /^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)/;
 					var domain = check_tab_array[0].url.match(regexp)[1];
 					
+
+					//if new day - set spent time to zero
+					isNewDay();
+
+
 					if(result.target_domains.includes(domain) && top_window.focused){
 
 						//update spent time
@@ -60,9 +65,6 @@ function check_visible_tab(){
 						if(result.spent_time % 60 == 0){
 							//update badge
 							chrome.browserAction.setBadgeText({ 'text': updateTime(result.spent_time).slice(0,5) });
-
-							//if new day - set time to zero
-							isNewDay();
 						}
 
 						//check limit
