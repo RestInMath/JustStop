@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "JustStop",
+  "version": "0.1",
+  "description": "Easyway to stop suffer",
+
+  "background":{
+    "persistent": false,
+    "scripts" : ["content.js", "popup.js"]
+  },
+  "browser_action":{
+    "default_popup":"popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ]
+}

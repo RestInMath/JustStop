@@ -1,0 +1,50 @@
+#spentTime {
+	font-size: 350%;
+	color:black;
+	margin-bottom: 0px;
+}
+
+#timeLimitDiv {
+}
+
+#plusButton{
+	font-size: 180%;
+	text-align: right;
+	color:darkgray;
+}
+
+#plusButton:hover{
+	color:red;
+}
+
+.optionButton {
+	margin-top: 3px;
+	width: 100%;
+	margin-bottom: 3px;
+}
+
+.collapsible {
+	font-size: 130%;
+	cursor: default;
+	color: gray;
+	margin-bottom: 3px;
+	outline: none;
+	user-select: none;
+}
+
+.options {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	text-align: center;
+}
+
+.collapsible:hover{
+	color: red;
+}
+
+.options.lineBorder {
+	border-bottom: dotted;
+	border-bottom-color: gray;
+	border-bottom-right-radius: inherit;
+}
